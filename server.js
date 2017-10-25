@@ -21,12 +21,12 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use((req, res, next) => {
-  res.render('maintenance.hbs', {
-    siteTitle: 'Sample Server',
-    pageTitle: 'Maintenance Mode'
-  })
-});
+// app.use((req, res, next) => {
+//   res.render('maintenance.hbs', {
+//     siteTitle: 'Sample Server',
+//     pageTitle: 'Maintenance Mode'
+//   })
+// });
 
 app.use(express.static(__dirname + '/public'));
 
